@@ -64,8 +64,8 @@ function findMissingNumber(arr) {
     x2 = x2 ^ arr[i]
   }
   
-  //missing number is the xor of x1 and x2
-  return x1 ^ x2
+  //missing number is the xor of x1 and x2 BAsically (1 ^ 2 ^ 3 ^ 4 ) ^ ( 1 ^ 2 ^ 4) ====> everything will cancel except the 3
+  return x1 ^ x2 
 }
 
 findMissingNumber([1,5,2,6,4])//3
