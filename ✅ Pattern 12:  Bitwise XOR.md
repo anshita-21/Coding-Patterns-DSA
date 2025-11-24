@@ -195,6 +195,10 @@ function findSingleNumbers(nums) {
     //Excess bits shifted off to the left are discarded. 
     //Zero bits are shifted in from the right.
   }
+
+  // to find the rightmost set bit
+  number & (-number)
+  -number = invert the bits then +1
   
   let num1 = 0; num2 = 0
   
